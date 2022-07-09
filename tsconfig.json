@@ -28,7 +28,8 @@
 			"@/layout/*": ["./components/layout/*"],
 			"@/ui/*": ["./components/ui/*"],
 			"@/styles/*": ["./styles/*"],
-			"@/store/*": ["./core/store/*"]
+			"@/store/*": ["./core/store/*"],
+			"@/service/*": ["./core/service/*"]
 		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

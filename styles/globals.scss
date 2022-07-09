@@ -8,6 +8,6 @@
     @apply bg-white dark:bg-black h-full;
   }
   #__next{
-    @apply h-full flex flex-col
+    @apply min-h-full flex flex-col
   }  
 }

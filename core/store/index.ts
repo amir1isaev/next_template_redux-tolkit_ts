@@ -1,12 +1,15 @@
 import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit'
 import { postReducer } from './post'
 import { createWrapper } from 'next-redux-wrapper'
+import { postAPI } from '@/service/post'
 
 export const setupStore = () => {
 	return configureStore({
 		reducer: {
 			post: postReducer,
+			[postAPI.reducerPath]: postAPI.reducer,
 		},
+		middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(postAPI.middleware),
 	})
 }
 
