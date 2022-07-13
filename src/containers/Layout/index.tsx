@@ -1,7 +1,7 @@
 import Header from '@/layout/Header'
 import Footer from '@/layout/Footer'
 import Main from '@/layout/Main'
-import Providers from 'containers/Providers'
+import Providers from '@/containers/Providers'
 import NextNProgress from 'nextjs-progressbar'
 import { FC, ReactNode } from 'react'
 

@@ -1,8 +1,9 @@
 import type { AppProps } from 'next/app'
-import { wrapper } from '@/store'
 import '@/styles/globals.scss'
+import { wrapper } from '@/store'
 import { postActions } from '@/store/post'
-import Layout from 'containers/Layout'
+import Layout from '@/containers/Layout'
+
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<Layout>
